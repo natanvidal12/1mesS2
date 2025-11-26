@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>1 Mês Juntos 💜</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app" aria-live="polite">
+    <div class="card" role="main" aria-label="Card principal">
+      <section class="login" id="loginView" aria-labelledby="loginTitle">
+        <div class="decor" aria-hidden="true"></div>
+        <div class="logo">
+          <div>
+            <div class="title">1 Mês Juntos</div>
+          </div>
+        </div>
+        <p class="hint">Digite a senha para entrar amoooorr hehehe</p>
+        <div class="pw-box">
+          <input id="pwInput" class="pw" type="text" inputmode="numeric" placeholder="Digite a senha hehehe... DD/MM/YYYY" aria-label="Senha - data do mêsversário" maxlength="10" pattern="\d{2}/\d{2}/\d{4}">
+          <button id="enterBtn" class="enter" aria-label="Entrar">Entrar</button>
+        </div>
+        <small class="hint">Formato obrigatório: <code>DD/MM/YYYY</code></small>
+
+        <div style="height:14px"></div>
+      </section>
+      <main class="main fade" id="mainView" aria-hidden="true">
+        <header class="hero fade">
+          <div class="left">
+            <h1>Feliz 1 mês, meu amor, <strong>EU TE AMO MUUUUIIIITOOOO</strong> 💜</h1>
+            <p>Uma pequena surpresa para guardar nossas memórias. Toque nas fotos para efeitos.</p>
+          </div>
+          <div>
+            <button id="logout" class="enter" style="background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--purple);">Sair</button>
+          </div>
+        </header>
+        <section class="banner fade" aria-label="Banner comemorativo">
+          <div class="bg" id="parallaxBg" aria-hidden="true"></div>
+          <div style="position:relative;z-index:2">
+            <h2>1 mês juntos</h2>
+            <small>26 de Outubro de 2025 — Começamos nossa história ✨</small>
+          </div>
+        </section>
+        <section class="section timeline fade" aria-label="Linha do tempo">
+          <div class="months">
+            <div class="heart" aria-hidden="true" onclick="chuvaDeCoracoes()">💜</div>
+            <div>
+              <div style="font-size:14px">1 mês juntos</div>
+              <div style="font-size:11px;color:rgba(255,255,255,0.65)">Desde 26/10/2025</div>
+            </div>
+          </div>
+          <div class="since">
+            <div id="niceNote">Momentos, sorrisos, beijos e vários abraços.</div>
+            <div style="font-size:11px;color:rgba(255,255,255,0.55)">Toque nas fotos para ver efeitos.</div>
+          </div>
+        </section>
+        <section class="section fade" aria-label="Galeria de fotos">
+          <h3 style="margin:0 0 10px 0;font-family:'Playfair Display',serif;color:var(--purple)">Galeria</h3>
+          <div class="gallery" id="gallery">
+            <img src="Imagens/WhatsApp Image 2025-11-26 at 13.43.03 (1).jpeg" alt="Foto 1" class="photo">
+            <img src="Imagens/WhatsApp Image 2025-11-26 at 13.43.03.jpeg" alt="Foto 2" class="photo">
+            <img src="Imagens/WhatsApp Image 2025-11-26 at 13.43.04 (1).jpeg" alt="Foto 3" class="photo">
+            <img src="Imagens/WhatsApp Image 2025-11-26 at 13.43.04 (2).jpeg" alt="Foto 4" class="photo">
+            <img src="Imagens/WhatsApp Image 2025-11-26 at 13.43.04.jpeg" alt="Foto 5" class="photo">
+            <img src="Imagens/WhatsApp Image 2025-11-26 at 13.43.05.jpeg" alt="Foto 6" class="photo">
+          </div>
+        </section>
+        <div id="lightbox" class="lightbox">
+          <img id="lightbox-img" src="">
+        </div>
+        <section class="section theme-grid fade" aria-label="Seções temáticas">
+          <article class="theme fade">
+            <h3>Como nos conhecemos</h3>
+            <p>Eu me lembro até hoje de quando nos conhecemos meu amor, dia 20/09/2025, cada dia mais você me prova que eu não me arrependo hora nenhuma da minha decisão de te mandar, "Slk, você não é bobbie mas tá mó goods", eu lembro que quando descobriram que eu mandei isso, me chamaram de louco e que isso não dá em nada, e hoje completamos o nosso primeiro mês juntos, (de muitos hehehe), eu sempre pedi para Deus coragem e oportunidades, tudo sempre no tempo dele, e amor, isso foi tão perfeito, e tão no tempo certo, essa minha ação de coragem mudou nossas vidas para a melhor meu amor, graças a isso hoje você é o MEEEEUUUUU amor, a MIIIIIINHAAAAA vida, e o ser mais importante da minha existência. Hoje você quem me motiva a ser uma pessoa melhor e sempre buscar realizar todos os meus sonhos com você, quando eu te mandei essa mensagem, eu jamais imaginava que depois disso você seria a minha futura esposa, mãe dos meus filhos e a mulher da minha vida, o destino é muito louco né meu amor?</p>
+          </article>
+
+          <article class="theme fade">
+            <h3>Nosso primeiro encontro</h3>
+            <p>E o nosso primeiro encontro meu amor, lembra? A gente foi lá na Sol e Neve depois do piquenique do MAC lá na praia, eu te levei no ABC na bicicleta, e ali nós já sentíamos que tinha um sentimento enorme por trás né? A gente tava indo sem muito assunto, tímidos, mas ao decorrer da tarde a gente falou mais que maritaca, você até fez o rabinho de cabrito em mim lembra? Essa foi a primeira vez que eu saí com alguém que aceitou sair comigo de verdade, então eu não sabia muito como prosseguir kkkkkk, eu só lembro que eu tava esperando o nosso assunto acabar para eu poder te dar um beijão meu amor, (POV: falamos o tempo inteiro e não nos beijamos), a gente apenas conversou muuuuuiiito e tivemos certeza que quem estava ao nosso lado era nossa alma gêmea, nesse mesmo dia a gente deu o nosso primeiro abraço lembra?</p>
+          </article>
+
+          <article class="theme fade">
+            <h3>Momentos especiais</h3>
+            <p>E quando a gente deu o primeiro beijo amor, lembra disso? Como esquecer né? Eu lembro que nesse dia tava tendo aniversário do meu vô, e essa também foi a primeira vez que eu saí a noite, então eu também não sabia como não pisar na bola, tem vezes que eu penso que eu sou um animalzinho amor kkkkk, e esse foi mais um dia que a gente conversou MUITO, (como todos os dias hehehe), Você foi com o seu vestido preto, você tava toda linda e cheirosa, a gente até perdeu a hora, e quando eu fui te deixar na sua casa, a gente se abraçando... Mwhuaaaa, a gente se beijou amor, eu lembro até hoje, e lembra do dia 26/10/2025 amor? Que dia perfeito gatinha, a gente ficou junto o dia inteiro, de mãos dadas, sem separa um do outro hora nenhuma, eu tava tão realizado amor, na hora da missa a Ana Bocuda vira e fala "Eu sei do seu segredo!!", e logo depois disso eu vi que todas as suas amigas estavam do meu lado pra ajudar a fazer o momento perfeito pra você, na hora do almoço enquanto vocÊ e a Manuela buscavam o refrigerante eu fui lá no ônibus procurar as nossas alianças (POV: não tinha ônibus), depois na hora do show elas foram lá buscar denovo e deram a ideia da gente tirar A FOTO, e ali amor, ali nós literalmente viramos NÓS, que momento perfeito amor!</p>
+          </article>
+
+          <article class="theme fade">
+            <h3>Mensagem especial</h3>
+            <p>Eu só agradeço de todo o meu coração meu amor, por ter o previlégio de ter você como namorada, e meu futuro estar bem aqui comigo, eu prometo de tudo ser sempre o homem da sua vida, te amar muito e ser eternamente seu, eu prometo te proteger sempre e te proporcionar os melhores sentimentos da vida meu amor. <strong>Eu te amo muito meu anjo</strong>, sua beleza me cativa todos os dias, você tem tantas qualidades meu amor, você é linda, perfeita, cheirosa, engraçada, gentil, carinhosa, atenciosa, tudo amor, você é TUDO, e é o meu tudo, isso que me motiva cada mais a ser uma pessoa melhor. Eu agradeço tanto a Deus por ter guardado a minha futura esposa pra mim, e ter me guardado pra ela, <strong>EU TE AMO MUITO MEU AMOR</strong>, <strong> te amo, eu te almo, eu te vivo</strong>, por toda a minha vida meu amor! "Vou te amar por toda a minha vida"</p>
+          </article>
+        </section>
+
+        <div class="footer fade">
+          <div>Feito com todo o <span aria-hidden="true">💜</span> amor!</div>
+          <div style="font-size:11px;color:rgba(255,255,255,0.45)">Toque / Passe para interagir</div>
+        </div>
+      </main>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <div id="heart-container"></div>
+</body>
+</html>
